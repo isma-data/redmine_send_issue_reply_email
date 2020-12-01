@@ -1,6 +1,6 @@
 en:
-  label_send_email: Send a email
-  field_default_send_email: default checked "Send a email"
+  label_send_email: Send email
+  field_default_send_email: default checked "Send email"
   field_from_address: From
   field_reply_to_address: Reply-To
   field_to_addresses: To

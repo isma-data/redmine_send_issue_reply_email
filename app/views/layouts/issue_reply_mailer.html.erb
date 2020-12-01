@@ -47,7 +47,7 @@ ul.details {color:#959595; margin-bottom: 1.5em;}
 <% end -%>
 <%= yield %>
 <% if @email_delivery_setting.footer.present? -%>
-<span class="footer"><%= textilizable(@email_delivery_setting, :footer) %></span>
+<span class="footer"><%= textilizable(@email_delivery_setting, :footer) %><br><%= User.current.name %>, support@inject-star.com</span>
 <% end -%>
 </body>
 </html>

@@ -20,11 +20,11 @@
   <div id="email-addresses" style="<%= visibled_style %>" class="splitcontent email-addresses">
     <%= form.fields_for :email_address_of_issue_reply do |f| %>
       <%= f.hidden_field :issue_id, disabled: !show_fields %>
-      <p id="from_address">
+      <p id="from_address" style="display:none;">
         <%= f.label :from_address %><span class="required">*</span><br />
         <%= email_delivery_setting.from_address %>
       </p>
-      <p id="reply_to_address">
+      <p id="reply_to_address" style="display:none;">
         <%= f.label :reply_to_address %><br />
         <%= email_delivery_setting.reply_to_address %>
       </p>
@@ -38,26 +38,10 @@
       </p>
       <p>
         <%= f.label :subject %><span class="required">*</span><br />
-        <%= f.text_field :subject, size: 120, maxlength: 255, no_label: true, disabled: !show_fields %>
+        <%= f.text_field :subject, :value => "#{issue.project.name} [##{issue.id}] #{issue.subject}", size: 120, maxlength: 255, no_label: true, disabled: !show_fields %>
       </p>
     <% end %>
     <hr>
-
-    <div id="email-header" style="<%= visibled_style %>" class="splitcontent email-addresses">
-      <% if email_delivery_setting.plain_text? %>
-        <pre><%= email_delivery_setting.header %></pre>
-      <% else %>
-        <%= textilizable(email_delivery_setting, :header) %>
-      <% end %>
-    </div>
-  </div>
-
-  <div id="email-footer" style="<%= visibled_style %>" class="splitcontent email-addresses">
-    <% if email_delivery_setting.plain_text? %>
-      <pre><%= email_delivery_setting.footer %></pre>
-    <% else %>
-      <%= textilizable(email_delivery_setting, :footer) %>
-    <% end %>
   </div>
 
   <script>
