@@ -1,0 +1,27 @@
+de:
+  label_send_email: "Sende als Email an externe Empfänger"
+  field_default_send_email: "Sende als Email an Externe ist Standard-Voreinstellung"
+  field_from_address: "Von"
+  field_reply_to_address: "Antwort an"
+  field_to_addresses: "An"
+  field_cc_addresses: "Cc"
+  field_plain_text: :setting_plain_text_mail
+  field_header: :setting_emails_header
+  field_footer: :setting_emails_footer
+  field_use_settings_of_redmine: "Verwende Redmine-Einstellungen"
+  field_delivery_method: "Sendungsmethode"
+  field_server_location: "Ort"
+  field_server_arguments: "Argumente"
+  field_server_address: "Adresse"
+  field_server_domain: "Domäne"
+  field_server_port: "Port"
+  field_authentication: "Authentifizierung"
+  field_user_name: "Benutzername"
+  field_enable_starttls_auto: "Aktiviere TLS Autostart"
+  field_openssl_verify_mode: "OpenSSL Verifizierungsmodus"
+  label_email_template: "Email-Template"
+  label_send_email_server: "Mailserver"
+  label_send_email_account: "Konto"
+  label_send_issue_reply_email: "Ticket-Direktmail"
+  project_module_send_issue_reply_email: :label_send_issue_reply_email
+  permission_manage_email_delivery_setting: "Emailversand-Konfiguration"
