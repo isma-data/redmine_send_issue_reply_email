@@ -1,5 +1,5 @@
 de:
-  label_send_email: "Sende als Email an externe Empfänger (Anhänge derzeit nicht möglich)"
+  label_send_email: "Sende als Email an externe Empfänger"
   field_default_send_email: "Sende als Email an Externe ist Standard-Voreinstellung"
   field_from_address: "Von"
   field_reply_to_address: "Antwort an"
